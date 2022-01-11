@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100vw;
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  div {
+    display: flex;
+    width: 60vw;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+      margin: 0 35px;
+    }
+    :hover {
+      color: red;
+    }
+  }
+}
