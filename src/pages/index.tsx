@@ -1,10 +1,6 @@
 import Link from 'next/link';
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 
-const IndexPage = () => (
-  <div>
-    <Header />
-  </div>
-);
+const IndexPage = () => <Layout></Layout>;
 
 export default IndexPage;

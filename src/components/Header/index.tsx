@@ -4,12 +4,14 @@ import styles from './styles.module.scss';
 const Header = () => {
   return (
     <div className={styles.header}>
-      <h1>My Recommendations</h1>
+      <Link href={'/'}>
+        <h1>My Recommendations</h1>
+      </Link>
       <div>
-        <Link href={'#_blank'}>
+        <Link href={'/movies'}>
           <a>Movies</a>
         </Link>
-        <Link href={'#_blank'}>
+        <Link href={'/series'}>
           <a>Series</a>
         </Link>
       </div>
