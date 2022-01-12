@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ id }) => {
   };
 
   useEffect(() => {
-    handleImage();
+    // handleImage();
   }, []);
 
   return (

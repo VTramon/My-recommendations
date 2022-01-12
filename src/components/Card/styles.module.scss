@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  object-fit: cover;
+  aspect-ratio: 4/5;
+
+  img {
+    width: 80%;
+  }
+}
