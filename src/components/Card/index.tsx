@@ -15,7 +15,6 @@ const Card: React.FC<CardProps> = ({ id }) => {
     const data = response.data;
 
     setImgData(data);
-    console.log(data);
   };
 
   useEffect(() => {
@@ -25,10 +24,7 @@ const Card: React.FC<CardProps> = ({ id }) => {
   return (
     <div className={styles.card} id={id}>
       {!!imgData ? (
-        <>
-          <img src={imgData.image} alt={imgData.title} />
-          <h3>{imgData.title}</h3>
-        </>
+        <img className={styles.card} src={imgData.image} alt={imgData.title} />
       ) : null}
     </div>
   );

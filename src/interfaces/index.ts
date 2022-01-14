@@ -10,3 +10,7 @@ export type imageProps = {
   title?: string;
   image?: string;
 };
+
+export type CarouselProps = {
+  children: React.ReactNode;
+};
