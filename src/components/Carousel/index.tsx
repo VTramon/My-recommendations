@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { CarouselProps } from '../interfaces';
+import { CarouselProps } from '../../interfaces';
 import styles from './styles.module.scss';
 
 const CarouselComponent: React.FC<CarouselProps> = ({ children }) => {

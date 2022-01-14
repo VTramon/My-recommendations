@@ -14,3 +14,11 @@ export type imageProps = {
 export type CarouselProps = {
   children: React.ReactNode;
 };
+
+export type utilsData = {
+  name: string;
+  id: string;
+  number: number;
+  type: 'movie' | 'serie';
+  genre: 'animation' | 'la';
+};
