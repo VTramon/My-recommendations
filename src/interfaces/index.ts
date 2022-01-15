@@ -2,17 +2,10 @@ export type LayoutProps = {
   children?: React.ReactNode;
 };
 
-export type CardProps = {
-  id: string;
-};
-
-export type imageProps = {
+export type cardProps = {
   title?: string;
   image?: string;
-};
-
-export type CarouselProps = {
-  children: React.ReactNode;
+  id?: string;
 };
 
 export type utilsData = {
@@ -21,4 +14,11 @@ export type utilsData = {
   number: number;
   type: 'movie' | 'serie';
   genre: 'animation' | 'la';
+};
+
+export type myRecommendationList = {
+  id?: string;
+  imDbRating?: string;
+  image?: string;
+  title?: string;
 };
