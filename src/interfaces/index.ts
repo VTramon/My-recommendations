@@ -3,9 +3,14 @@ export type LayoutProps = {
 };
 
 export type cardProps = {
-  title?: string;
-  image?: string;
-  id?: string;
+  item: {
+    title?: string;
+    image?: string;
+    id?: string;
+  };
+};
+export type boxProps = {
+  items?: myRecommendationList[];
 };
 
 export type utilsData = {
