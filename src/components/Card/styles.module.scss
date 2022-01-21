@@ -1,3 +1,22 @@
 .card {
+  display: block;
+  position: relative;
   width: 200px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+// .card:hover ~ .card {
+//   transform: translateX(25%);
+// }
+
+.image {
+  position: block;
+  max-height: 100%;
 }

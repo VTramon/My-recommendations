@@ -1,6 +1,9 @@
 import { myRecommendationList } from '../../interfaces';
 
-export const handleRamdom = (data: myRecommendationList[]) => {
+export const handleRamdom = (
+  data: myRecommendationList[],
+  qunatity: number
+) => {
   let ramdomData: myRecommendationList[] = [];
   let ramdoms: number[] = [];
   for (let i = 0; i < data.length; i++) {
@@ -11,5 +14,5 @@ export const handleRamdom = (data: myRecommendationList[]) => {
       ramdomData.push(data[ramdomNumber]);
     }
   }
-  return ramdomData.slice(0, 15);
+  return ramdomData.slice(0, qunatity);
 };

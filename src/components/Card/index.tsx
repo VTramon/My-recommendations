@@ -6,7 +6,9 @@ const Card: React.FC<cardProps> = ({ item }) => {
   return (
     <>
       {!!item ? (
-        <img className={styles.card} src={item.image} alt={item.title} />
+        <div className={styles.card}>
+          <img className={styles.image} src={item.image} alt={item.title} />
+        </div>
       ) : null}
     </>
   );

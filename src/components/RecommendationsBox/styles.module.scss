@@ -1,0 +1,17 @@
+.box {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  // width: 90vw;
+  // height: 80vh;
+  gap: 5px;
+
+  // margin-top: 50px;
+  // grid-template-rows: 12vw;
+  // grid-template-columns: auto;
+  // gap: 5px;
+}
