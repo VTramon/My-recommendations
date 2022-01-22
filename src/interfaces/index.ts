@@ -1,29 +1,36 @@
 export type LayoutProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
 export type cardProps = {
   item: {
-    title?: string;
-    image?: string;
-    id?: string;
-  };
-};
+    title?: string
+    image?: string
+    id?: string
+  }
+}
 export type boxProps = {
-  items?: myRecommendationList[];
-};
+  items?: myRecommendationList[]
+}
 
 export type utilsData = {
-  name: string;
-  id: string;
-  number: number;
-  type: 'movie' | 'serie';
-  genre: 'animation' | 'la';
-};
+  name: string
+  id: string
+  number: number
+  type: 'movie' | 'serie'
+  genre: 'animation' | 'la'
+}
 
 export type myRecommendationList = {
-  id?: string;
-  imDbRating?: string;
-  image?: string;
-  title?: string;
-};
+  id?: string
+  imDbRating?: string
+  image?: string
+  title?: string
+}
+
+export type ramdomVideo = {
+  name: string
+  key: string
+  type: string
+  official: boolean
+}
