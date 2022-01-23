@@ -17,15 +17,16 @@ const IndexPage = () => {
         `https://imdb-api.com/en/API/IMDbList/${process.env.NEXT_PUBLIC_KEY}/ls537479491`
       )
       const data = response.data['items']
+      console.log(data)
 
-      setDataItems(handleRamdom(data, 16))
+      setDataItems(handleRamdom(data, 8))
     } catch (error) {
       console.log(error)
     }
   }
 
   useEffect(() => {
-    // handleRecommendationData()
+    handleRecommendationData()
   }, [])
 
   return (

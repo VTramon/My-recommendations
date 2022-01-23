@@ -27,10 +27,3 @@ export type myRecommendationList = {
   image?: string
   title?: string
 }
-
-export type ramdomVideo = {
-  name: string
-  key: string
-  type: string
-  official: boolean
-}
