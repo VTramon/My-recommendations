@@ -6,7 +6,7 @@ const RecommendationVideo = () => {
   const [muted, setMuted] = useState(true)
 
   return (
-    <div className={styles.innerBox}>
+    <div className={styles.videoBox}>
       <div className={styles.button}>
         <button
           onClick={() => {

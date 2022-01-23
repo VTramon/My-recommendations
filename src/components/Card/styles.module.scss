@@ -5,16 +5,14 @@
   height: 300px;
   object-fit: cover;
   overflow: hidden;
+  transition: 0.5s ease;
 }
 
 .card:hover {
   transform: scale(1.5);
+  transition-delay: 0.5s;
   z-index: 1;
 }
-
-// .card:hover ~ .card {
-//   transform: translateX(25%);
-// }
 
 .image {
   position: block;

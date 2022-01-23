@@ -11,6 +11,7 @@ export type cardProps = {
 }
 export type boxProps = {
   items?: myRecommendationList[]
+  name: string
 }
 
 export type utilsData = {

@@ -10,6 +10,8 @@ import { myRecommendationList } from '../interfaces'
 
 const IndexPage = () => {
   const [dataItems, setDataItems] = useState<myRecommendationList[]>()
+  // const [dataMovies, setDataMovies] = useState<myRecommendationList[]>()
+  // const [dataTV, setDataTV] = useState<myRecommendationList[]>()
 
   const handleRecommendationData = async () => {
     try {
@@ -20,6 +22,8 @@ const IndexPage = () => {
       console.log(data)
 
       setDataItems(handleRamdom(data, 8))
+      // setDataMovies(handleRamdom(data, 8))
+      // setDataTV(handleRamdom(data, 8))
     } catch (error) {
       console.log(error)
     }
@@ -42,7 +46,7 @@ const IndexPage = () => {
 
       <Layout>
         <RecommendationVideo />
-        <RecommendationsBox items={dataItems} />
+        <RecommendationsBox name="Some of my favorites" items={dataItems} />
       </Layout>
     </>
   )

@@ -1,17 +1,21 @@
-.box {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-
+.contentBox {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(2, auto);
-  // width: 90vw;
-  // height: 80vh;
   gap: 5px;
+}
 
-  // margin-top: 50px;
-  // grid-template-rows: 12vw;
-  // grid-template-columns: auto;
-  // gap: 5px;
+.outerContentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 50px 85px 50px;
+
+  grid-area: content;
+}
+
+.name {
+  color: white;
+  font-size: 1.7em;
+  margin-bottom: 15px;
 }
