@@ -7,6 +7,7 @@ import { Layout } from '../components/Layout'
 import { RecommendationVideo } from '../components/RecommendationVideo'
 import { RecommendationsBox } from '../components/RecommendationsBox'
 import { myRecommendationList } from '../interfaces'
+import { Carousel } from '../components/Carousel'
 
 const IndexPage = () => {
   const [dataItems, setDataItems] = useState<myRecommendationList[]>()
@@ -30,7 +31,7 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    handleRecommendationData()
+    // handleRecommendationData()
   }, [])
 
   return (
@@ -45,8 +46,9 @@ const IndexPage = () => {
       </Head>
 
       <Layout>
-        <RecommendationVideo />
-        <RecommendationsBox name="Some of my favorites" items={dataItems} />
+        <Carousel />
+        {/* <RecommendationVideo />
+        <RecommendationsBox name="Some of my favorites" items={dataItems} /> */}
       </Layout>
     </>
   )
